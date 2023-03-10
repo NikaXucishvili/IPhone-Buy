@@ -11,7 +11,7 @@ body{
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -21,22 +21,18 @@ body{
 }
 
 
-.leftside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100vh;
-}
-
-.box{
-    width: 285px;
+.iphone13{
+    width: 295px;
     height: 600px;
+    background: url(./images/iphone13.png) no-repeat;
+    background-size: cover;
     border-radius: 15px;
-    background: #fff;
 }
 
-.rightside{
-    width: 50%;
-    height: 100vh;
+.iphone14{
+    width: 295px;
+    height: 600px;
+    background: url(./images/iphone14.png) no-repeat;
+    background-size: cover;
+    border-radius: 15px;
 }
