@@ -1,0 +1,42 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(./images/Apple.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.box{
+    width: 285px;
+    height: 600px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.rightside{
+    width: 50%;
+    height: 100vh;
+}
