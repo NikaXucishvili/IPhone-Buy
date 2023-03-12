@@ -65,6 +65,26 @@ button i{
     padding: 15px;
 }
 
+.alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    background-color: rgb(255 209 98);
+    color: #000;
+    font-size: 1rem;
+    border-radius: 10px;
+    animation: alertAnim 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    letter-spacing: 0.8px;
+}
+
+@keyframes alertAnim {
+    from { top: -100px; opacity: 0; }
+    to { top: 0; opacity: 1; }
+}
 
 
 .iphone13{
@@ -80,5 +100,18 @@ button i{
     height: 600px;
     background: url(./images/iphone14.png) no-repeat;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 15px
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .box{
+        margin: 50px;
+    }
 }
