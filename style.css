@@ -119,8 +119,22 @@ button i{
     }
 
     .box{
-        width: 400px;
+        width: 350px;
         margin: 50px;
-        height: 80vh;
+        height: 100%;
+    }
+
+    .iphone13, .iphone14{
+        width: 270px;
+        height: 550px;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    button{
+        width: 200px;
+        height: 40px;
     }
 }
