@@ -9,10 +9,15 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     min-height: 100vh;
     background: url(./images/Apple.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 .container{
@@ -30,8 +35,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 500px;
-    height: 85vh;
-    flex-wrap: wrap;
+    height: 100vh;
     border-radius: 15px;
     background: #202020;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -105,40 +109,18 @@ button i{
 }
 
 
-@media only screen and (max-width: 1010px) {
+@media only screen and (max-width: 1000px) {
+
     .container{
         display: flex;
         flex-direction: column;
-    }
-
-    .iphone13, .iphone14{
-        width: 275px;
-        height: 560px;
+        width: 100%;
+        justify-content: center;
     }
 
     .box{
         width: 400px;
-        height: 75vh;
         margin: 50px;
-    }
-
-    h3{
-        font-size: 1.3rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .box{
-        width: 300px;
-        height: 70vh;
-    }
-
-    h3{
-        font-size: 1.1rem;
-    }
-
-    button{
-        width: 200px;
-        height: 40px;
+        height: 80vh;
     }
 }
