@@ -10,17 +10,18 @@
 
 body{
     min-height: 100vh;
+    background: url(./images/Apple.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background: url(./images/Apple.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
 }
 
 .box{
@@ -108,10 +109,36 @@ button i{
     .container{
         display: flex;
         flex-direction: column;
-        height: 100%;
+    }
+
+    .iphone13, .iphone14{
+        width: 275px;
+        height: 560px;
     }
 
     .box{
+        width: 400px;
+        height: 75vh;
         margin: 50px;
+    }
+
+    h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .box{
+        width: 300px;
+        height: 70vh;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    button{
+        width: 200px;
+        height: 40px;
     }
 }
